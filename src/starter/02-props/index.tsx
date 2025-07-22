@@ -1,7 +1,13 @@
-interface ComponentProps {
+import { type PropsWithChildren } from "react";
+
+// interface ComponentProps {
+//   name: string;
+//   id: number;
+//   children?: React.ReactNode;
+// }
+interface ComponentProps extends PropsWithChildren {
   name: string;
   id: number;
-  children?: React.ReactNode;
 }
 
 function Component({ name, id, children }: ComponentProps) {
