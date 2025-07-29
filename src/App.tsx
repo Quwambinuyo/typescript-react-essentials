@@ -1,4 +1,4 @@
-import Component from "./starter/06-context/basic-index";
+import Component from "./starter/07-reducers";
 
 function App() {
   return (
