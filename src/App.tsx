@@ -1,10 +1,8 @@
-import Component from "./starter/08-fetch-data/axiosIndex";
+import Component from "./starter/09-rtk";
 
 function App() {
   return (
     <main>
-      {/* <Component name="anna" type="advanced" email="anna@gmail.com" />
-      <Component name="anna" type="basic" email="anna@gmail.com" /> */}
       <Component />
     </main>
   );
