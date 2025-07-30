@@ -1,4 +1,4 @@
-import { useTheme, ThemeProvider } from './context';
+import { useTheme, ThemeProvider } from "./context";
 
 function ParentComponent() {
   return (
@@ -6,7 +6,6 @@ function ParentComponent() {
       <Component />
     </ThemeProvider>
   );
-  return <Component />;
 }
 
 function Component() {
@@ -18,13 +17,13 @@ function Component() {
       <h2>random component</h2>
       <button
         onClick={() => {
-          if (context.theme === 'dark') {
-            context.setTheme('system');
+          if (context.theme === "dark") {
+            context.setTheme("system");
             return;
           }
-          context.setTheme('dark');
+          context.setTheme("dark");
         }}
-        className='btn btn-center'
+        className="btn btn-center"
       >
         toggle theme
       </button>
